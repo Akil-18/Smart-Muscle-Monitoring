@@ -43,7 +43,7 @@ SemaphoreHandle_t bufferMutex;
 WiFiClientSecure net;
 PubSubClient client(net);
 
-//Function Description:
+//Function Description: To blink status LEDs for easy debugging
 void blink(uint8_t PinVal){
   digitalWrite(PinVal, 1);
   delay(250);
