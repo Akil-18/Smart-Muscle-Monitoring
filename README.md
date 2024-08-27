@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/fcf51966-7cc4-48f3-a3c5-e283f3a3d31d)
+![image](https://github.com/user-attachments/assets/934f267b-efa8-4ac8-963d-5553d9bcb887)
+
+
 **(Ongoing Project)**
 
 
