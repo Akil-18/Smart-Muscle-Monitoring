@@ -10,11 +10,11 @@
 
 _(I) Purpose_
 
-  1. The purpose of the Smart Muscle Monitoring Project is to monitor muscle activity in real-time using sensors like the ICM20948 (9-DOF IMU) and MyoWare EMG sensors.
+   * The purpose of the Smart Muscle Monitoring Project is to monitor muscle activity in real-time using sensors like the ICM20948 (9-DOF IMU) and MyoWare EMG sensors.
   
-  2. The project aims to analyze muscle movements and provide feedback on exercise form, which can help in optimizing workout routines and preventing injuries.
+   * The project aims to analyze muscle movements and provide feedback on exercise form, which can help in optimizing workout routines and preventing injuries.
   
-  3. Additionally, the project incorporates AWS IoT connectivity to store and analyze the data in the cloud.
+   * Additionally, the project incorporates AWS IoT connectivity to store and analyze the data in the cloud.
 
 
 _(II) Inputs_
@@ -30,11 +30,11 @@ _(III) Outputs_
     
   2. ML-Based Feedback:
      
-  • Alerts when muscle fatigue is detected during exercises.
+   * Alerts when muscle fatigue is detected during exercises.
 
-  • Real-time feedback on exercise form to help improve technique.
+   * Real-time feedback on exercise form to help improve technique.
   
-  • Actionable insights delivered through a mobile app.
+   * Actionable insights delivered through a mobile app.
 
 
 
@@ -43,46 +43,46 @@ _(III) Outputs_
 
 _(I) Sensor Initialization_
 
-  1. Acquire continuous data from ICM20948 and EMG Sensor
+   * Acquire continuous data from ICM20948 and EMG Sensor
 
 
 _(II) Data Acquisition_
 
-  1. Continuously acquire and buffer data from the ICM20948 and MyoWare sensors.
+   * Continuously acquire and buffer data from the ICM20948 and MyoWare sensors.
   
-  2. Store data temporarily in RAM when Wi-Fi is connected.
+   * Store data temporarily in RAM when Wi-Fi is connected.
 
 
 _(III) Buffering Strategy_
 
-  1. Wi-Fi Connected: Buffer data in internal RAM for quick access and periodic flushing to the cloud.
+   * Wi-Fi Connected: Buffer data in internal RAM for quick access and periodic flushing to the cloud.
   
-  2. Wi-Fi Lost: Shift to SRAM (23LC512) for buffering data when Wi-Fi connectivity is lost.
+   * Wi-Fi Lost: Shift to SRAM (23LC512) for buffering data when Wi-Fi connectivity is lost.
   
-  3. Wi-Fi Restored: Flush the buffered data from SRAM to the cloud once Wi-Fi is reconnected, then clear SRAM and resume buffering in internal RAM.
+   * Wi-Fi Restored: Flush the buffered data from SRAM to the cloud once Wi-Fi is reconnected, then clear SRAM and resume buffering in internal RAM.
 
 
 _(IV) Data Transmission_
 
-  1. Send the buffered data to AWS IoT when Wi-Fi is connected.
+  * Send the buffered data to AWS IoT when Wi-Fi is connected.
   
-  2. Ensure seamless transition between Wi-Fi states without data loss.
+  * Ensure seamless transition between Wi-Fi states without data loss.
 
 
 _(V) Sensor Fusion_
 
-  1. Implement Sensor Fusion algorithms to combine data from the accelerometer, gyroscope, and magnetometer to produce accurate and stable orientation data (roll, pitch, yaw).
+   * Implement Sensor Fusion algorithms to combine data from the accelerometer, gyroscope, and magnetometer to produce accurate and stable orientation data (roll, pitch, yaw).
   
-  2. Use Kalman Filter or Madgwick Filter for sensor fusion.
+   * Use Kalman Filter or Madgwick Filter for sensor fusion.
 
 
 _(VI) Machine Learning Integration_
 
-  1. Utilize ML models hosted on AWS to analyze sensor data in real-time.
+   *  Utilize ML models hosted on AWS to analyze sensor data in real-time.
   
-  2. Detect muscle fatigue and evaluate exercise form based on sensor data.
+   * Detect muscle fatigue and evaluate exercise form based on sensor data.
   
-  3. Provide real-time feedback to users based on the ML analysis.
+   * Provide real-time feedback to users based on the ML analysis.
 
 
 
@@ -92,12 +92,12 @@ _(VI) Machine Learning Integration_
 
 _Real-time Performance_
 
-1. The system must operate in real-time, ensuring minimal latency in data acquisition, transmission, and ML-based feedback.
+   * The system must operate in real-time, ensuring minimal latency in data acquisition, transmission, and ML-based feedback.
 
 
 _Light Weight and Small Size_
 
-2. This is essential for user comfort, especially when the device is worn during physical activities.
+   * This is essential for user comfort, especially when the device is worn during physical activities.
 
 
 
