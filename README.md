@@ -1,5 +1,11 @@
+![image](https://github.com/user-attachments/assets/fcf51966-7cc4-48f3-a3c5-e283f3a3d31d)
+**(Ongoing Project)**
+
+
 **DESIGN**
+
 **1. Requirements**
+
 (i) Purpose:
 The purpose of the Smart Muscle Monitoring Project is to monitor muscle activity in real time using sensors like the ICM20948 (9-DOF IMU) and MyoWare EMG sensors.
 The project aims to analyze muscle movements and provide feedback on exercise form, which can help in optimizing workout routines and preventing injuries.
