@@ -5,6 +5,7 @@
 
 
 
+
 **1. AIM**
 
 _(I) Purpose_
@@ -34,6 +35,8 @@ _(III) Outputs_
   • Real-time feedback on exercise form to help improve technique.
   
   • Actionable insights delivered through a mobile app.
+
+
 
 
 **2. FUNCTIONAL REQUIREMENTS**
@@ -82,6 +85,8 @@ _(VI) Machine Learning Integration_
 • Provide real-time feedback to users based on the ML analysis.
 
 
+
+
 **3. NON - FUNCTIONAL REQUIREMENTS**
 
 
@@ -93,6 +98,8 @@ _Real-time Performance_
 _Light Weight and Small Size_
 
 • This is essential for user comfort, especially when the device is worn during physical activities.
+
+
 
 
 **4. SCHEMATIC DIAGRAM**
