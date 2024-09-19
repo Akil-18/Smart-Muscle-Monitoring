@@ -85,24 +85,7 @@ _(VI) Machine Learning Integration_
    * Provide real-time feedback to users based on the ML analysis.
 
 
-
-
-**3. NON - FUNCTIONAL REQUIREMENTS**
-
-
-_Real-time Performance_
-
-   * The system must operate in real-time, ensuring minimal latency in data acquisition, transmission, and ML-based feedback.
-
-
-_Light Weight and Small Size_
-
-   * This is essential for user comfort, especially when the device is worn during physical activities.
-
-
-
-
-**4. SCHEMATIC DIAGRAM**
+**3. SCHEMATIC DIAGRAM**
 
 ![image](https://github.com/user-attachments/assets/b129d03f-13da-4436-a5fd-f8e6e673fc4c)
 
