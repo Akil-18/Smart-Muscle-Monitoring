@@ -55,11 +55,11 @@ _(II) Data Acquisition_
 
 _(III) Buffering Strategy_
 
-   * Wi-Fi Connected: Buffer data in internal RAM for quick access and periodic flushing to the cloud.
-  
+   * Wi-Fi Connected: Buffer data in internal RAM for quick access and periodic transfer to the cloud.
+
    * Wi-Fi Lost: Shift to SRAM (23LC512) for buffering data when Wi-Fi connectivity is lost.
-  
-   * Wi-Fi Restored: Flush the buffered data from SRAM to the cloud once Wi-Fi is reconnected, then clear SRAM and resume buffering in internal RAM.
+
+   * Wi-Fi Restored: Transfer the buffered data from SRAM to the cloud once Wi-Fi is reconnected, then clear SRAM and resume buffering in internal RAM.
 
 
 _(IV) Data Transmission_
